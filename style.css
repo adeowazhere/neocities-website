@@ -3,7 +3,7 @@
    "how to change link color." */
 
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  background-color: rgb(51, 48, 62);
+  color: rgb(210, 210, 210);
+  font-family: monospace;
 }
