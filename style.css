@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(51, 48, 62);
+  background: url(https://i.ytimg.com/vi/tzlrg54UuWI/maxresdefault.jpg);
   color: rgb(210, 210, 210);
   font-family: monospace;
   font-size: 16px;
@@ -7,5 +7,12 @@ body {
 }
 
 h1 {
-  margin: 50px;
+  padding: 20px;
+}
+
+#main {
+  margin:auto;
+  width: 800px;
+  height: 1000px;
+  background-color: rgba(43, 35, 56, 0.7);
 }
