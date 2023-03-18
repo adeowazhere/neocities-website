@@ -1,18 +1,23 @@
 body {
-  background: url(https://i.ytimg.com/vi/tzlrg54UuWI/maxresdefault.jpg);
+  background: url(/images/temp_bg.jpg);
   color: rgb(210, 210, 210);
   font-family: monospace;
   font-size: 16px;
   text-align: center;
+  padding: 5px;
 }
 
-h1 {
-  padding: 20px;
-}
-
-#main {
-  margin:auto;
-  width: 800px;
+.main {
   height: 1000px;
+}
+
+.main, .main-header {
+  margin: auto;
+  width: 600px;
+  padding: 20px;
   background-color: rgba(43, 35, 56, 0.7);
+}
+
+.main {
+  height: 1000px;
 }
