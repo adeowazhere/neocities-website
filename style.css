@@ -9,6 +9,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background: url(/images/temp_bg.jpg);
   color: rgb(210, 210, 210);
   font-family: DTM Mono;
@@ -17,21 +19,28 @@ body {
   padding: 5px;
 }
 
+.adeowazhere-banner {
+}
+
+.adeowazhere-header {
+  align-self: center;
+  width: 750px;
+}
+
 .main {
+  align-self: center;
+  align-items: center;
+  width: 600px;
   height: 1000px;
+  background-color: rgba(10, 30, 35, 0.9);
+  padding: 15px;
 }
 
 h1 {
   font-family: DLTRN Mono;
 }
 
-.main, .main-header {
-  margin: auto;
-  width: 600px;
-  padding: 20px;
-  background-color: rgba(43, 35, 56, 0.7);
-}
-
-.main {
-  height: 1000px;
+img {
+  image-rendering: pixelated;
+  filter: sepia(1) saturate(140%) hue-rotate(150deg);
 }
