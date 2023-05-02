@@ -40,7 +40,7 @@ h1 {
   font-family: DLTRN Mono;
 }
 
-img {
+img:not(#adeowazhere-banner) {
   image-rendering: pixelated;
-  filter: sepia(1) saturate(140%) hue-rotate(150deg);
+  filter: sepia(1) brightness(80%) contrast(105%) saturate(100%) hue-rotate(160deg);
 }
