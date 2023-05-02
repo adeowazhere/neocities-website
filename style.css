@@ -11,7 +11,9 @@
 body {
   display: flex;
   flex-direction: column;
-  background: url(/images/temp_bg.jpg);
+  background: url(/images/test_bg.png) fixed center no-repeat;
+  background-size: 75%;
+  background-color: rgb(20, 25, 27);
   color: rgb(210, 210, 210);
   font-family: DTM Mono;
   font-size: 16px;
@@ -19,20 +21,19 @@ body {
   padding: 5px;
 }
 
-.adeowazhere-banner {
-}
-
 .adeowazhere-header {
   align-self: center;
-  width: 750px;
+  font-size: xx-large;
+  text-shadow: 0px 0px 12px #35fff577;
 }
 
 .main {
   align-self: center;
   align-items: center;
-  width: 600px;
-  height: 1000px;
-  background-color: rgba(10, 30, 35, 0.9);
+  width: 625px;
+  height: auto;
+  background-color: rgba(20, 25, 25, 0.9);
+  background: linear-gradient(0deg, rgba(20, 25, 25, 1) 125px,rgba(0, 0, 0, 0));
   padding: 15px;
 }
 
@@ -42,5 +43,5 @@ h1 {
 
 img:not(#adeowazhere-banner) {
   image-rendering: pixelated;
-  filter: sepia(1) brightness(80%) contrast(105%) saturate(100%) hue-rotate(160deg);
+  filter: sepia(1) brightness(80%) contrast(85%) saturate(180%) hue-rotate(145deg);
 }
