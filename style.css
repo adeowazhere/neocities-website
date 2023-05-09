@@ -12,41 +12,57 @@ body {
   display: flex;
   flex-direction: column;
   background: url(/images/test_bg.png) fixed top center no-repeat;
-  background-size: 75%;
+  background-size: 75vw;
   background-color: rgb(20, 25, 27);
   color: rgb(210, 210, 210);
   font-family: DTM Mono;
   font-size: 1.25vw;
   text-align: center;
-  padding: 5px;
+  padding: 0.25vw;
   align-items: center;
 }
 
 .adeowazhere-header {
-  width: 100vw;
+  width: 100%;
   align-self: center;
   font-size: 2.5vw;
-  text-shadow: 0px 0px 12px #35fff577;
+  text-shadow: 0px 0px 12px rgba(55, 200, 200, 0.7);
   background: linear-gradient(0deg, rgba(20, 25, 25, 0),rgba(20, 25, 25, 1));
 
 }
 
 .main {
-  align-self: center;
   align-items: center;
-  max-width: 50vw;
+  max-width: 45vw;
   height: auto;
   background: linear-gradient(0deg, rgba(20, 25, 25, 1) 125px,rgba(0, 0, 0, 0));
-  padding: 15px;
+  padding: 1.5vw;
 }
 
 h1 {
   font-family: DLTRN Mono;
 }
 
+img {
+  position: relative;
+  max-width: 100%;
+  object-fit: contain;
+}
 img:not(#adeowazhere-banner) {
   image-rendering: pixelated;
   filter: sepia(1) brightness(80%) contrast(85%) saturate(180%) hue-rotate(145deg);
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-button  {
+  border: solid rgb(55, 140, 150) 2px;
+}
+
+::-webkit-scrollbar {
+  width: 1.25vw
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(55, 140, 150)
 }
 
 @media screen and (max-width: 800px) {
