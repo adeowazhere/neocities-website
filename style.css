@@ -54,7 +54,7 @@ img:not(#adeowazhere-banner) {
 }
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-button  {
-  border: solid rgb(55, 140, 150) 2px;
+  border: solid rgb(75,150,160) 2px;
 }
 
 ::-webkit-scrollbar {
@@ -62,7 +62,7 @@ img:not(#adeowazhere-banner) {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(55, 140, 150)
+  background: rgb(75,150,160)
 }
 
 @media screen and (max-width: 800px) {
