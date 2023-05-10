@@ -39,15 +39,24 @@ body {
 }
 
 .about-me-imgs {
-  max-width: 15vw;
+  max-width: 14vw;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-items: center;
 }
 
 h1 {
   font-family: DLTRN Mono;
+}
+
+.notes {
+  font-size: 0.95vw;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+}
+
+a, a:visited, a:active, a:link {
+  color: inherit;
 }
 
 img {
