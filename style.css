@@ -20,19 +20,6 @@
   }
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 0.25vw;
-  background: url(/images/test_bg1.png) fixed top center no-repeat;
-  background-size: cover;
-  background-color: rgb(20, 25, 27);
-  color: rgb(210, 210, 210);
-  font-family: DTM Mono;
-  font-size: 1.25vmax;
-}
-
 .adeowazhere-header {
   width: 100%;
   align-self: center;
@@ -42,8 +29,20 @@ body {
 }
 
 #adeowazhere-banner {
-  max-width: 80%;
   animation: floating 5s infinite;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.25vw;
+  background: url(/images/test_bg1.png) fixed top center no-repeat;
+  background-size: cover;
+  background-color: rgb(20, 25, 27);
+  color: rgb(180, 210, 210);
+  font-family: DTM Mono;
+  font-size: 1.25vmax;
 }
 
 .main {
