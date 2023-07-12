@@ -8,13 +8,25 @@
   src: url(/fonts/DTM-Mono.otf);
 }
 
+@keyframes floating {
+  0% {
+    transform: translate(0, -7.5px);
+  }
+  50% {
+    transform: translate(0, 7.5px);
+  }
+  100% {
+    transform: translate(0, -7.5px);
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0.25vw;
-  background: url(/images/test_bg.png) fixed top center no-repeat;
-  background-size: 75vw;
+  background: url(/images/test_bg1.png) fixed top center no-repeat;
+  background-size: cover;
   background-color: rgb(20, 25, 27);
   color: rgb(210, 210, 210);
   font-family: DTM Mono;
@@ -29,6 +41,11 @@ body {
   font-size: 2.5vmax;
 }
 
+#adeowazhere-banner {
+  max-width: 100%;
+  animation: floating 5s infinite;
+}
+
 .main {
   max-width: 90vmin;
   height: auto;
@@ -36,13 +53,6 @@ body {
   align-self: center;
   background: linear-gradient(0deg, rgba(20, 25, 25, 0.9) 55%,rgba(0, 0, 0, 0));
   padding: 2vw;
-}
-
-.about-me-imgs {
-  max-width: 14vw;
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
 }
 
 h1 {
@@ -62,16 +72,18 @@ a, a:visited, a:active, a:link {
 img {
   max-width: 80%;
   object-fit: contain;
+  image-rendering: pixelated;
 }
 
 img:not(#adeowazhere-banner) {
   margin: 1.75vw;
-  image-rendering: pixelated;
   filter: sepia(1) brightness(80%) contrast(85%) saturate(180%) hue-rotate(145deg);
+  transition: max-width 1s;
 }
 
-#adeowazhere-banner {
-  max-width: 100%;
+img:not(#adeowazhere-banner):hover {
+  filter: sepia(0) brightness(100%) contrast(100%) saturate(100%) hue-rotate(0deg);
+  max-width: 90%;
 }
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-button  {
