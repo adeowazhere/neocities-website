@@ -1,3 +1,10 @@
+:root {
+  --transparent: rgba(0, 0, 0, 0);
+  --primary-colour: rgb(75, 150, 160);
+  --secondary-colour: rgb(15, 30, 32);
+  --text-colour: rgb(180, 210, 210);
+}
+
 @font-face {
   font-family: DLTRN Mono;
   src: url(/fonts/deltarune.ttf);
@@ -10,47 +17,50 @@
 
 @keyframes floating {
   0% {
-    transform: translate(0, -7.5px);
+    transform: translate(0, -1vh);
   }
   50% {
-    transform: translate(0, 7.5px);
+    transform: translate(0, 1vh);
   }
   100% {
-    transform: translate(0, -7.5px);
+    transform: translate(0, -1vh);
   }
-}
-
-.adeowazhere-header {
-  width: 100%;
-  align-self: center;
-  text-shadow: 0px 0px 12px rgba(55, 200, 200, 0.7);
-  background: linear-gradient(0deg, rgba(20, 25, 25, 0),rgba(20, 25, 25, 1));
-  font-size: 2.5vmax;
-}
-
-#adeowazhere-banner {
-  animation: floating 5s infinite;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-family: DTM Mono;
+  font-size: 1.15rem;
   text-align: center;
   padding: 0.25vw;
-  background: url(/images/test_bg1.png) fixed top center no-repeat;
-  background-size: cover;
-  background-color: rgb(20, 25, 27);
-  color: rgb(180, 210, 210);
-  font-family: DTM Mono;
-  font-size: 1.25vmax;
+  background: url(/images/test_bg1.png) fixed center no-repeat;
+  background-size: 90vmin;
+  background-color: var(--secondary-colour);
+  color: var(--text-colour);
 }
 
-.main {
+.adeowazhere-header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  font-size: 2.25rem;
+  background: linear-gradient(0deg, var(--transparent), var(--secondary-colour));
+  text-shadow: 0px 0px 12px var(--primary-colour);
+}
+
+#banner {
+  position: relative;
+  top: 6.25vh;
+  animation: floating 5s infinite;
+}
+
+main {
   max-width: 90vmin;
   height: auto;
   align-items: center;
-  align-self: center;
-  background: linear-gradient(0deg, rgba(20, 25, 25, 0.9) 55%,rgba(0, 0, 0, 0));
+  background: linear-gradient(0deg, var(--secondary-colour) 50vh, var(--transparent));
   padding: 2vw;
 }
 
@@ -59,7 +69,7 @@ h1 {
 }
 
 .notes {
-  font-size: 0.95vw;
+  font-size: 0.9rem;
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
 }
@@ -74,19 +84,19 @@ img {
   image-rendering: pixelated;
 }
 
-img:not(#adeowazhere-banner) {
+img:not(#banner) {
   margin: 1.75vw;
   filter: sepia(1) brightness(80%) contrast(85%) saturate(180%) hue-rotate(145deg);
   transition: max-width 1s;
 }
 
-img:not(#adeowazhere-banner):hover {
+img:not(#banner):hover {
   filter: sepia(0) brightness(100%) contrast(100%) saturate(100%) hue-rotate(0deg);
   max-width: 90%;
 }
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-button  {
-  border: solid rgb(75, 150, 160) 2px;
+  border: solid var(--primary-colour) 2px;
 }
 
 ::-webkit-scrollbar {
@@ -94,5 +104,5 @@ img:not(#adeowazhere-banner):hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(75, 150, 160)
+  background: var(--primary-colour)
 }
