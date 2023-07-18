@@ -67,6 +67,10 @@ nav header h1 {
   padding: 2.5vmin;
 }
 
+#nav-links a {
+  padding: 1vmin;
+}
+
 #floating-adeo {
   filter: sepia(0) brightness(100%) contrast(100%) saturate(100%) hue-rotate(0deg) 
           drop-shadow(1.5vmax 1.5vmax 0.5vmax var(--shadow-colour));
@@ -102,7 +106,6 @@ p {
 }
 
 a, a:visited, a:active, a:link {
-  padding: 1vmin;
   color: inherit;
 }
 
