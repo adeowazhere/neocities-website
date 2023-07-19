@@ -95,7 +95,7 @@ h1 {
 }
 
 p {
-  width: clamp(45ch, inherit, 75ch);
+  width: clamp(45ch, auto, 75ch);
   text-align: justify;
 }
 
