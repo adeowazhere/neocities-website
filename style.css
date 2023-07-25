@@ -33,7 +33,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0px;
-  font-size: 1.15rem;
+  font-size: 1.15em;
   text-align: center;
   font-family: DTM Mono;
   color: var(--text-colour);
@@ -69,6 +69,7 @@ nav header h1 {
 
 #nav-links a {
   padding: 1vmin;
+  font-size: 1.35vmax;
 }
 
 #floating-adeo {
@@ -84,7 +85,7 @@ nav header h1 {
 main {
   width: 90vmin;
   height: auto;
-  padding: 2vw;
+  padding: 2vmax;
   align-items: center;
   background-color: var(--secondary-colour);
   border: 0.25rem solid var(--primary-colour);
@@ -94,7 +95,7 @@ h1 {
   font-family: DLTRN Mono;
 }
 
-.header-links {
+.title-links {
   display: inline-block;
   margin-bottom: 1.25vh;
 }
@@ -105,7 +106,7 @@ p {
 }
 
 .notes {
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
 }
@@ -130,9 +131,7 @@ img:hover {
   max-width: 75vmin;
 }
 
-#simons-button, #simons-button:hover {
-  position: relative;
-  top: 1.25vh;
+#simons-button {
   margin: 0px;
   filter: sepia(1) brightness(80%) contrast(85%) saturate(180%) hue-rotate(145deg)
           drop-shadow(0px 0px 0px var(--shadow-colour));
