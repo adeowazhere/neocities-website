@@ -96,7 +96,7 @@ h1 {
 
 p {
   width: clamp(45ch, auto, 75ch);
-  text-align: justify;
+  text-align: left;
 }
 
 .notes {
