@@ -94,6 +94,11 @@ h1 {
   font-family: DLTRN Mono;
 }
 
+.header-links {
+  display: inline-block;
+  margin-bottom: 1.25vh;
+}
+
 p {
   width: clamp(45ch, auto, 75ch);
   text-align: left;
