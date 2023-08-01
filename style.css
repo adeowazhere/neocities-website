@@ -63,12 +63,15 @@ nav header h1 {
 }
 
 #nav-links {
+  align-self: center;
+  width: 90vmin;
   padding: 2.5vmin;
 }
 
 #nav-links a {
+  text-align: center;
+  font-size: 1.45vmax;
   padding: 1vmin;
-  font-size: 1.35vmax;
 }
 
 #floating-adeo {
@@ -96,12 +99,9 @@ h1 {
 }
 
 h2 {
+  padding: 1vmin;
   margin-top: 3vmax;
-}
-
-.title-links {
-  display: inline-block;
-  margin-bottom: 1.25vh;
+  border: 0.25rem solid var(--primary-colour);
 }
 
 p {
